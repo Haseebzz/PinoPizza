@@ -66,7 +66,6 @@ export default function CartPage() {
       }).then(async (response) => {
         if (response.ok) {
           resolve();
-          redirect('/')
           window.location = await response.json();
         } else {
           reject();
